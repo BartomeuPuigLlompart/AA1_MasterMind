@@ -7,6 +7,19 @@
 
 import Foundation
 
-class ViewModel {
+class ViewModel: ObservableObject {
+    @Published var activeRow: Int
     
+    //private var timer: Timer
+    
+    init() {
+        self.activeRow = 1
+        
+        /*self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
+        }*/
+    }
+    
+    public func sumOne() {
+        activeRow += 1
+    }
 }

@@ -37,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF56CFC025FA8F66001488A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFF371BB25F7EEB000F9D9E2 /* ContentView.swift */,
+				EFF371D025F801EE00F9D9E2 /* RowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFF371AD25F7EEB000F9D9E2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +65,12 @@
 		EFF371B825F7EEB000F9D9E2 /* MasterMind */ = {
 			isa = PBXGroup;
 			children = (
+				EF56CFC025FA8F66001488A0 /* View */,
 				EFF371B925F7EEB000F9D9E2 /* MasterMindApp.swift */,
-				EFF371BB25F7EEB000F9D9E2 /* ContentView.swift */,
 				EFF371C925F7EF5A00F9D9E2 /* ViewModel.swift */,
 				EFF371BD25F7EEB100F9D9E2 /* Assets.xcassets */,
 				EFF371C225F7EEB100F9D9E2 /* Info.plist */,
 				EFF371BF25F7EEB100F9D9E2 /* Preview Content */,
-				EFF371D025F801EE00F9D9E2 /* RowView.swift */,
 			);
 			path = MasterMind;
 			sourceTree = "<group>";
