@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFB0BDF126013B6700A1B1A0 /* InputsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0BDF026013B6700A1B1A0 /* InputsRowView.swift */; };
 		EFF371BA25F7EEB000F9D9E2 /* MasterMindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF371B925F7EEB000F9D9E2 /* MasterMindApp.swift */; };
 		EFF371BC25F7EEB000F9D9E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF371BB25F7EEB000F9D9E2 /* ContentView.swift */; };
 		EFF371BE25F7EEB100F9D9E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF371BD25F7EEB100F9D9E2 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EFB0BDF026013B6700A1B1A0 /* InputsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsRowView.swift; sourceTree = "<group>"; };
 		EFF371B625F7EEB000F9D9E2 /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF371B925F7EEB000F9D9E2 /* MasterMindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMindApp.swift; sourceTree = "<group>"; };
 		EFF371BB25F7EEB000F9D9E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			children = (
 				EFF371BB25F7EEB000F9D9E2 /* ContentView.swift */,
 				EFF371D025F801EE00F9D9E2 /* RowView.swift */,
+				EFB0BDF026013B6700A1B1A0 /* InputsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF371BC25F7EEB000F9D9E2 /* ContentView.swift in Sources */,
+				EFB0BDF126013B6700A1B1A0 /* InputsRowView.swift in Sources */,
 				EFF371CA25F7EF5A00F9D9E2 /* ViewModel.swift in Sources */,
 				EFF371BA25F7EEB000F9D9E2 /* MasterMindApp.swift in Sources */,
 				EFF371D125F801EE00F9D9E2 /* RowView.swift in Sources */,

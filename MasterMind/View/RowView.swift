@@ -14,28 +14,27 @@ struct RowView: View {
     let secondColor: Color
     let thirdColor: Color
     let fourthColor: Color
-    let active: Bool
     
     var body: some View {
         HStack{
             Spacer()
             VStack{
                 
-                Rectangle().fixedSize()
-                Rectangle().fixedSize()
+                Rectangle().fill(Color.gray).fixedSize()
+                Rectangle().fill(Color.gray).fixedSize()
             }
             VStack{
-                Rectangle().fixedSize()
-                Rectangle().fixedSize()
+                Rectangle().fill(Color.gray).fixedSize()
+                Rectangle().fill(Color.gray).fixedSize()
             }
             Circle()
-                .fill(firstColor).background(Color.orange)
+                .fill(firstColor)
             Circle()
-                .fill(secondColor).background(Color.orange)
+                .fill(secondColor)
             Circle()
-                .fill(thirdColor).background(Color.orange)
+                .fill(thirdColor)
             Circle()
-                .fill(fourthColor).background(Color.orange)
+                .fill(fourthColor)
             Spacer()
         }
             
@@ -44,6 +43,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(firstColor: Color.red, secondColor: Color.red, thirdColor: Color.red, fourthColor: Color.red, active: false)
+        RowView(firstColor: Color.red, secondColor: Color.red, thirdColor: Color.red, fourthColor: Color.red)
     }
 }
