@@ -13,12 +13,12 @@ struct InputsRowView: View {
     let thirdColor: Color
     let fourthColor: Color
     
-    let action: () -> Void
+    let viewModel: ViewModel
     
     var body: some View {
         HStack{
             Spacer()
-            Button("AA", action: { action() })
+            Button("OK", action: { viewModel.checkRow() })
                 .frame(width: 30, height: 30, alignment: .center)
                 .padding()
                 .background(Color.gray)
@@ -39,8 +39,9 @@ struct InputsRowView: View {
     }
 }
 
+
 struct InputsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        InputsRowView(firstColor: Color.red, secondColor: Color.red, thirdColor: Color.red, fourthColor: Color.red, action: print("SWAP COLOR"))
+        InputsRowView(firstColor: Color.red, secondColor: Color.red, thirdColor: Color.red, fourthColor: Color.red, viewModel: ViewModel())
     }
 }

@@ -33,7 +33,7 @@ struct ContentView: View {
                     }
                     }
             }
-            Button("Done") {self.viewModel.swapColor(_color: 1)}
+            InputsRowView(firstColor: viewModel.colorList[0], secondColor: viewModel.colorList[1], thirdColor: viewModel.colorList[2], fourthColor: viewModel.colorList[3], viewModel: viewModel)
             Text(String(format: "Tempt: %d", self.viewModel.activeRow+1)).font(.title2).background(Color.orange).padding().foregroundColor(.white)
         }
         
