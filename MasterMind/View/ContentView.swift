@@ -33,7 +33,7 @@ struct ContentView: View {
                     }
                     }
             }
-            InputsRowView(firstColor: viewModel.colorList[0], secondColor: viewModel.colorList[1], thirdColor: viewModel.colorList[2], fourthColor: viewModel.colorList[3], viewModel: viewModel)
+            InputsRowView(firstColor: viewModel.rowList[viewModel.activeRow].firstColor, secondColor: viewModel.rowList[viewModel.activeRow].secondColor, thirdColor: viewModel.rowList[viewModel.activeRow].thirdColor, fourthColor: viewModel.rowList[viewModel.activeRow].fourthColor, viewModel: viewModel)
             Text(String(format: "Tempt: %d", self.viewModel.activeRow+1)).font(.title2).background(Color.orange).padding().foregroundColor(.white)
         }
         
