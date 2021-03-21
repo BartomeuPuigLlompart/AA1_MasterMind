@@ -21,7 +21,7 @@ struct InputsRowView: View {
             Button("OK", action: { viewModel.checkRow() })
                 .frame(width: 30, height: 30, alignment: .center)
                 .padding()
-                .background(Color.green)
+                .background(Color.gray)
                 .foregroundColor(.black)
                 .font(.title2)
                 .cornerRadius(30)

@@ -14,18 +14,19 @@ struct RowView: View {
     let secondColor: Color
     let thirdColor: Color
     let fourthColor: Color
+    let puntuation: [Color]
     
     var body: some View {
         HStack{
             Spacer()
             VStack{
                 
-                Rectangle().fill(Color.gray).fixedSize()
-                Rectangle().fill(Color.gray).fixedSize()
+                Rectangle().fill(puntuation[0]).fixedSize()
+                Rectangle().fill(puntuation[1]).fixedSize()
             }
             VStack{
-                Rectangle().fill(Color.gray).fixedSize()
-                Rectangle().fill(Color.gray).fixedSize()
+                Rectangle().fill(puntuation[2]).fixedSize()
+                Rectangle().fill(puntuation[3]).fixedSize()
             }
             Circle()
                 .fill(firstColor)
@@ -43,6 +44,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(firstColor: Color.red, secondColor: Color.red, thirdColor: Color.red, fourthColor: Color.red)
+        RowView(firstColor: Color.red, secondColor: Color.red, thirdColor: Color.red, fourthColor: Color.red, puntuation: [Color.white, Color.white, Color.white, Color.white])
     }
 }

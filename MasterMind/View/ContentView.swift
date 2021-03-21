@@ -13,6 +13,7 @@ struct row {
     var secondColor: Color
     var thirdColor: Color
     var fourthColor: Color
+    var colorCheck: [Color] = [Color.white, Color.white, Color.white, Color.white]
 }
 
 struct ContentView: View {
@@ -29,7 +30,7 @@ struct ContentView: View {
                 ForEach(self.viewModel.rowList, id: \.number) { row in
                     if self.viewModel.activeRow >= row.number
                     {
-                        RowView(firstColor: row.firstColor, secondColor: row.secondColor,thirdColor: row.thirdColor,fourthColor: row.fourthColor)
+                        RowView(firstColor: row.firstColor, secondColor: row.secondColor,thirdColor: row.thirdColor,fourthColor: row.fourthColor, puntuation: row.colorCheck)
                     }
                     }
             }
